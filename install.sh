@@ -3,7 +3,8 @@ set -e
 
 # Installs the necessary dependencies for the dashboard
 echo "Installing dependencies..."
-sudo pacman -Syu --needed kitty glava fastfetch cmatrix hyprctl btop konsole
+sudo pacman -Syu --needed kitty fastfetch cmatrix hyprctl btop konsole
+yay -S glava
 
 # Checks if dashboard script exits
 if [[ ! -f dashboard.sh ]]; then
