@@ -2,6 +2,12 @@
 
 A Hyprland dashboard script that automatically arranges a set of terminal tools into a polished layout on your desktop — system monitor, audio visualizer, system info, and a Matrix rain effect.
 
+<div align="center">
+
+![Hypr-Dashboard](https://github.com/user-attachments/assets/3204e646-04d3-4a59-9109-c995f9deacaf)
+
+</div>
+
 ## Preview
 
 The dashboard tiles the following tools across Workspace 1:
@@ -16,7 +22,7 @@ The dashboard tiles the following tools across Workspace 1:
 ## Requirements
 
 - [Hyprland](https://hyprland.org/) Wayland compositor
-- The following packages (all available via `pacman`):
+- The following packages (all available via `pacman` or `yay`):
   - `kitty`
   - `glava`
   - `fastfetch`
