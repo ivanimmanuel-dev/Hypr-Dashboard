@@ -7,13 +7,14 @@ set -e
 # Installs the necessary dependencies for the dashboard
 echo "Installing dependencies..."
 
-sudo pacman -Syu --needed kitty fastfetch btop
+sudo pacman -S --needed kitty fastfetch btop
 
 if command -v yay >/dev/null 2>&1; then
-    yay -S glava tty-clock
+    yay -S --needed glava tty-clock
+else
     echo "yay not found. Please install glava and tty-clock manually:"
-    echo "  glava: https://github.com/jarcode-foss/glava"
-    echo "  tty-clock: https://aur.archlinux.org/packages/tty-clock
+    echo "glava: https://github.com/jarcode-foss/glava"
+    echo "tty-clock: https://aur.archlinux.org/packages/tty-clock"
 fi
 
 # Checks if dashboard script exists
@@ -27,4 +28,4 @@ echo "Copying dashboard.sh to /usr/local/bin as 'hypr-dashboard'..."
 sudo cp dashboard.sh /usr/local/bin/hypr-dashboard
 sudo chmod +x /usr/local/bin/hypr-dashboard
 
-echo "Done! Run 'hypr-dashboard' to launch."
+echo "[Dashboard] Done! Run 'hypr-dashboard' to launch."
