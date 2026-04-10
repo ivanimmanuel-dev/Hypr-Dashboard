@@ -7,12 +7,13 @@ set -e
 # Installs the necessary dependencies for the dashboard
 echo "Installing dependencies..."
 
-sudo pacman -Syu --needed kitty fastfetch tty-clock btop
+sudo pacman -Syu --needed kitty fastfetch btop
 
 if command -v yay >/dev/null 2>&1; then
-    yay -S glava
-else
-    echo "yay not found. Please install glava manually: https://github.com/jarcode-foss/glava"
+    yay -S glava tty-clock
+    echo "yay not found. Please install glava and tty-clock manually:"
+    echo "  glava: https://github.com/jarcode-foss/glava"
+    echo "  tty-clock: https://aur.archlinux.org/packages/tty-clock
 fi
 
 # Checks if dashboard script exists
