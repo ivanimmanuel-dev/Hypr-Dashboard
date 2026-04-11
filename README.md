@@ -35,6 +35,14 @@ The dashboard tiles the following tools across Workspace 1:
 
 ## Installation
 
+
+### AUR (Recommended)
+```bash
+yay -S hypr-dashboard
+```
+
+### Manual
+
 1. Clone this repository:
 ```bash
    git clone https://github.com/ivanimmanuel-dev/Hypr-Dashboard.git
